@@ -10,8 +10,11 @@
     padding: 0;
 }
 
-#content {
+#footer {
+    display: flex;
     flex-grow: 1;
+    align-items: end;
+    justify-content: center;
 }
 
 #footer {
@@ -20,6 +23,17 @@
 }
 
 .text_aff {
-    background-color: white;
+    margin-top: 10px;
     padding: 1.5rem;
 }
+
+.imgToBtn {
+    padding: 0;
+    border: 8px solid #041f33;
+}
+
+.imgToBtn:hover {
+    border: 8px solid #0b2d59;
+    box-shadow: 2px 2px 2px #000000;
+}
+
