@@ -1,17 +1,25 @@
-.my_bg{
+.my_bg {
     background: linear-gradient(to right, #0b3374, #1287da);
 }
-#container{
+
+#container {
     display: flex;
     flex-flow: column;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-#content{
+#content {
     flex-grow: 1;
 }
 
-#footer{
+#footer {
     color: white;
     margin-bottom: 5px;
+}
+
+.text_aff {
+    background-color: white;
+    padding: 1.5rem;
 }
