@@ -10,6 +10,7 @@ $(function () {
             .css("border-top", "none")
             .css("border-bottom", "none");
         $(".collapse").css("background", "none");
+        $(".carousel").carousel(0);
 
     }).on('show.bs.collapse', function () {
         $("#content").css("background-color", "white")
@@ -24,10 +25,12 @@ $(function () {
         {
             window.location.href="#"+$(this).attr('id');
         }
-
-
-
     });
+    $('.carousel').carousel({
+        interval:10000
+    });
+
+
 
 });
 
