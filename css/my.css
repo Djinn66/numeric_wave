@@ -24,7 +24,7 @@
 
 .text_aff {
     margin-top: 10px;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0rem 1.5rem ;
 }
 
 .imgToBtn {
@@ -36,4 +36,28 @@
     border: 8px solid #0b2d59;
     box-shadow: 2px 2px 2px #000000;
 }
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230b2d59' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-prev {
+    justify-content: left;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%230b2d59' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 
+}
+.carousel-control-next {
+    justify-content: right;
+}
+.carousel-indicators li {
+    background-color: #0b2d59;
+}
+.carousel-indicators{
+    margin-bottom: 0;
+}
+.carousel-item img{
+    padding: 5px;
+}
+a{
+    color: #0b3ba2;
+}

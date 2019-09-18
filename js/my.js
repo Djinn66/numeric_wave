@@ -1,7 +1,7 @@
 $(function () {
     $(".imgToBtn").click(function () {
         hideAll();
-        id = $(this).attr('id').substr(4);
+        id ="#"+ $(this).attr('id').substr(4);
         console.log(id);
         showOne(id);
     });
@@ -17,10 +17,17 @@ $(function () {
             .css("border-bottom", "2px solid #041f33");
         afficherTic($(this).attr('id'));
 
-    })/*.on('shown.bs.collapse', function () {
-        scrollTo(0,document.body.scrollHeight);
+    }).on('shown.bs.collapse', function () {
 
-    })*/;
+        estMobile = window.matchMedia("only screen and (max-width: 760px)") ;
+        if (estMobile.matches)
+        {
+            window.location.href="#"+$(this).attr('id');
+        }
+
+
+
+    });
 
 });
 
@@ -29,7 +36,7 @@ function hideAll() {
 }
 
 function showOne(item) {
-    $("#" + item).collapse('show');
+    $(item).collapse('show');
 }
 
 function afficherTic(item) {
