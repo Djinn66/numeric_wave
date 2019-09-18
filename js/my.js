@@ -26,10 +26,6 @@ $(function () {
             window.location.href="#"+$(this).attr('id');
         }
     });
-    $('.carousel').carousel({
-        interval:10000
-    });
-
 
 
 });
